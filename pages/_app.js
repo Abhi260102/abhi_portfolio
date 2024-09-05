@@ -1,24 +1,11 @@
 import '@/styles/globals.css'
 import '@/public/css/style.css'
 import Script from 'next/script'
-import Router from 'next/router'
 import { useEffect } from 'react'
 export default function App({ Component, pageProps }) {
-
+  
   useEffect(() => {
 
-    /* -----------------------------------------------
-  /* How to use? : Check the GitHub README
-  /* ----------------------------------------------- */
-
-    /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-    /*
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('particles.js loaded - callback');
-    });
-    */
-
-    /* Otherwise just put the config content (json): */
 
     particlesJS('particles-js',
 
@@ -140,14 +127,17 @@ export default function App({ Component, pageProps }) {
       }
 
     );
-
-
+  
   }, [])
+
+
+
+ 
+
+
   return <>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
@@ -157,12 +147,20 @@ export default function App({ Component, pageProps }) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-<Script src='/js/script.js'/>
+    <Script src='/js/script.js' />
+
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
 
-    <Component {...pageProps} />
+
+     <Component {...pageProps} />
+
+   
   </>
 }
+
+
+

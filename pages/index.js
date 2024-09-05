@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -15,11 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      <div>
-  {/* pre loader */}
   {/* <div class="loader-container">
-  <img draggable="false" src="./images/preloader.gif" alt="">
+  <img draggable="false" src="./images/preloader.gif" alt=""/>
 </div> */}
-  {/* navbar starts */}
+
   <header>
     <a href="/" className="logo"><i className="fab fa-node-js" /> Abhishek</a>
     <div id="menu" className="fas fa-bars" />
@@ -301,7 +299,7 @@ export default function Home() {
         <h3>contact info</h3>
         <p> <i className="fas fa-phone" />+91 XXX-XXX-XXXX</p>
         <p> <i className="fas fa-envelope" />abhishekmaurya676@gmail.com</p>
-        <p> <i className="fas fa-map-marked-alt" />Pune, India-412206</p>
+        <p> <i className="fas fa-map-marked-alt" />Jaipur, India-302017</p>
         <div className="share">
           <a href="https://www.linkedin.com/in/abhishek-maurya-853602217/" className="fab fa-linkedin" aria-label="LinkedIn" target="_blank" />
           <a href="https://github.com/Abhi260102" className="fab fa-github" aria-label="GitHub" target="_blank" />
