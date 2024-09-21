@@ -8,7 +8,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 html {
@@ -971,7 +970,8 @@ form .form-group {
   height: 50px;
   display: flex;
   position: relative;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
   width: 100%;
 }
 form i {
@@ -1010,7 +1010,8 @@ form .message textarea {
 }
 form .message {
   position: relative;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
   width: 100%;
 }
 form .message i {

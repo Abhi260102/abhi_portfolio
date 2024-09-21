@@ -1,7 +1,7 @@
 [
     {
         "name": "NextJS",
-        "icon": "https://abhi-portfolio-3ymgiu6ko-abhi260102s-projects.vercel.app/images/nextjs.png"
+        "icon": "/images/nextjs.jpeg"
     }, {
         "name": "ReactJS",
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
@@ -21,6 +21,15 @@
     {
         "name": "Firebase",
         "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+    },
+    {
+        "name": "Web Socket",
+        "icon": "/images/web_socket.gif"
+    },
+
+    {
+        "name": "Redis",
+        "icon": "/images/redis.png"
     },
  
     {
@@ -64,6 +73,10 @@
     {
         "name": "Netlify",
         "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    },
+    {
+        "name": "Vercel",
+        "icon": "/images/vercel.png"
     },
 
     {
