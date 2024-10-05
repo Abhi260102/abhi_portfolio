@@ -40,7 +40,7 @@ export default function Home() {
           <div id="particles-js" />
           <div className="content">
             <h2>Hi There,<br /> I'm Abhishek <span>Maurya</span></h2>
-            <p>I'm Into <span className="typing-text" /></p>
+            <p><span className='text-color'>I'm Into </span><span className="typing-text" /></p>
             <a href="#about" className="btn"><span>About Me</span>
               <i className="fas fa-arrow-circle-down" />
             </a>
