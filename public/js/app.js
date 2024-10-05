@@ -60,6 +60,7 @@ particlesJS('particles-js',
           "sync": false
         }
       },
+      
       "line_linked": {
         "enable": true,
         "distance": 150,
