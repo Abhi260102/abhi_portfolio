@@ -1226,24 +1226,15 @@ form .button-area {
 /* scroll top ends */
 
 
-
-.text-color {
+.text-color{
   color: black !important; 
+
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .text-color {
     color: white !important; 
   }
-} */
-
-
-
-@media (prefers-color-scheme: dark) {
-  :text-color {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-  }
 }
+
+
