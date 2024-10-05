@@ -67,7 +67,7 @@ export default function Home() {
               <h3>I'm Abhishek</h3>
               <span className="tag">Mern Stack Developer</span>
               <p className='text-color'>I am a Full-Stack developer based in Jaipur, India.
-                I have 2+ years of hand on experience as Mern developer,
+                I have 3+ years of hand on experience as Mern developer,
                 I am an Information Technology undergraduate from BIT.
                 I am very passionate about improving my coding skills &amp; developing applications &amp; websites.
                 I build WebApps and Websites using MERN Stack.
