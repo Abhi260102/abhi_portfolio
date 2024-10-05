@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Skill from '@/components/Skill'
 import ContactUs from '@/components/ContactUs'
 
@@ -20,7 +19,7 @@ export default function Home() {
 </div> */}
 
         <header>
-          <a href="/" className="logo"><i className="fab fa-node-js" /> Abhishek</a>
+          <a href="/" className="logo flex gap-2 justify-center items-center"><img src='/images/logo.png' className='rounded-full h-[40px] w-[40px]' alt=''/>  Abhishek</a>
           <div id="menu" className="fas fa-bars" />
           <nav className="navbar">
             <ul>
@@ -67,7 +66,7 @@ export default function Home() {
             <div className="content">
               <h3>I'm Abhishek</h3>
               <span className="tag">Mern Stack Developer</span>
-              <p>I am a Full-Stack developer based in Jaipur, India.
+              <p className='text-color'>I am a Full-Stack developer based in Jaipur, India.
                 I have 2+ years of hand on experience as Mern developer,
                 I am an Information Technology undergraduate from BIT.
                 I am very passionate about improving my coding skills &amp; developing applications &amp; websites.
@@ -76,12 +75,12 @@ export default function Home() {
                 Love to build Full-Stack clones. </p>
               <div className="box-container">
                 <div class="box">
-                  <p><span> age: </span> 24</p>
-                  <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+                  <p><span> age: </span>  <span className='text-color'> 24</span></p>
+                  <p><span> phone : </span><span className='text-color'> +91 XXX-XXX-XXXX</span></p>
                 </div>
                 <div className="box">
-                  <p><span> email : </span> <a href='mailto:abhishekmaurya676@gmail.com'>abhishekmaurya676@gmail.com</a></p>
-                  <p><span> place : </span> Jaipur, India - 302017</p>
+                  <p><span> email : </span> <a href='mailto:abhishekmaurya676@gmail.com' className='text-color'>abhishekmaurya676@gmail.com</a></p>
+                  <p><span> place : </span> <span className='text-color'>Jaipur, India - 302017</span></p>
                 </div>
               </div>
               <div className="resumebtn">
