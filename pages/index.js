@@ -66,7 +66,7 @@ export default function Home() {
             <div className="content">
               <h3>I'm Abhishek</h3>
               <span className="tag">Mern Stack Developer</span>
-              <p className='text-black-500'>I am a Full-Stack developer based in Jaipur, India.
+              <p className='text-black'>I am a Full-Stack developer based in Jaipur, India.
                 I have 3+ years of hand on experience as Mern developer,
                 I am an Information Technology undergraduate from BIT.
                 I am very passionate about improving my coding skills &amp; developing applications &amp; websites.
@@ -75,12 +75,12 @@ export default function Home() {
                 Love to build Full-Stack clones. </p>
               <div className="box-container">
                 <div class="box">
-                  <p><span> age: </span>  <span className='text-black-500'> 24</span></p>
-                  <p><span> phone : </span><span className='text-black-500'> +91 XXX-XXX-XXXX</span></p>
+                  <p><span> age: </span>  <span className='text-black'> 24</span></p>
+                  <p><span> phone : </span><span className='text-black'> +91 XXX-XXX-XXXX</span></p>
                 </div>
                 <div className="box">
-                  <p><span> email : </span> <a href='mailto:abhishekmaurya676@gmail.com' className='text-black-500'>abhishekmaurya676@gmail.com</a></p>
-                  <p><span> place : </span> <span className='text-black-500'>Jaipur, India - 302017</span></p>
+                  <p><span> email : </span> <a href='mailto:abhishekmaurya676@gmail.com' className='text-black'>abhishekmaurya676@gmail.com</a></p>
+                  <p><span> place : </span> <span className='text-black'>Jaipur, India - 302017</span></p>
                 </div>
               </div>
               <div className="resumebtn">

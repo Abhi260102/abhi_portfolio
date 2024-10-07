@@ -1237,4 +1237,15 @@ form .button-area {
   }
 }
 
+.text-black{
+  color: black !important; 
+
+}
+
+@media only screen and (max-width: 768px) {
+  .text-black{
+    color: black !important; 
+  }
+}
+
 
