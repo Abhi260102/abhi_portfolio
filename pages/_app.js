@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 export default function App({ Component, pageProps }) {
   const router = usePathname()
+  
   useEffect(() => {
     if (router === '/') {
       particlesJS('particles-js',
