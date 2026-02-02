@@ -1,10 +1,16 @@
 import Head from 'next/head'
 import Skill from '@/components/Skill'
 import ContactUs from '@/components/ContactUs'
+import { useEffect, useState } from 'react'
 
 
 export default function Home() {
-
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 2000)
+  }, [])
   return (
     <>
       <Head>
@@ -14,12 +20,53 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        {/* <div class="loader-container">
-  <img draggable="false" src="./images/preloader.gif" alt=""/>
-</div> */}
+        {/* {isLoading&&<div class="loader-container">
+          <img draggable="false" src="./images/preloader.gif" alt="" />
+        </div>} */}
+
+
+
+        {isLoading && (
+          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+
+            <div className="relative text-center px-8 py-10 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl">
+
+              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-28 h-28 bg-orange-500/20 blur-3xl rounded-full"></div>
+
+              <p className="text-orange-400 text-sm tracking-[0.3em] uppercase mb-3 animate-pulse">
+                Welcome
+              </p>
+
+              <div className="relative flex justify-center mb-6">
+                <div className="absolute w-24 h-24 rounded-full border-4 border-orange-400/20 animate-ping"></div>
+                <img
+                  src="./images/preloader.gif"
+                  alt="Loading"
+                  draggable="false"
+                  className="w-20 h-20 relative z-10 select-none"
+                />
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl font-semibold text-white tracking-wide">
+                Abhishek Maurya
+              </h1>
+
+              <p className="mt-2 text-sm text-slate-400 tracking-wide">
+                Crafting Digital Experiences
+              </p>
+
+              <div className="mt-6 w-48 h-1 mx-auto bg-slate-800 rounded-full overflow-hidden">
+                <div className="h-full w-1/2 bg-orange-400 animate-[loadingBar_1.4s_ease-in-out_infinite]"></div>
+              </div>
+
+            </div>
+          </div>
+        )}
+
+
 
         <header>
-          <a href="/" className="logo flex gap-2 justify-center items-center"><img src='/images/logo.png' className='rounded-full h-[40px] w-[40px]' alt=''/>  Abhishek</a>
+          <a href="/" className="logo flex gap-2 justify-center items-center"><img src='/images/logo.png' className='rounded-full h-[40px] w-[40px]' alt='' />  Abhishek</a>
           <div id="menu" className="fas fa-bars" />
           <nav className="navbar">
             <ul>
@@ -61,7 +108,7 @@ export default function Home() {
           <h2 className="heading"><i className="fas fa-user-alt" /> About <span>Me</span></h2>
           <div className="row">
             <div className="image">
-              <img draggable="false" className="tilt" src="./images/abhi_profile.jpg" alt />
+              <img draggable="false" className="tilt" src="./images/subject.png" alt />
             </div>
             <div className="content">
               <h3>I'm Abhishek</h3>
@@ -84,15 +131,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="resumebtn">
-                <a href="https://drive.google.com/file/d/1oMleKlccV1_Hmj2lbmzD90CsIBBJCn3m/view?usp=drive_link" target="_blank" className="btn"><span>Resume</span>
+                <a href="https://drive.google.com/file/d/1AD9vI33kWwcX7UanvM-_qX2FDAnSyrXW/view?usp=share_link" target="_blank" className="btn"><span>Resume</span>
                   <i className="fas fa-chevron-right" />
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <Skill/>
-  
+        <Skill />
+
         <section className="education" id="education">
           <h1 className="heading"><i className="fas fa-graduation-cap" /> My <span>Education</span></h1>
           <p className="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
@@ -119,11 +166,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         <section className="work" id="work">
           <h2 className="heading"><i className="fas fa-laptop-code" /> Projects <span>Made</span></h2>
           <div className="box-container">
-          
+
           </div>
           <div className="viewall">
             <a href="/projects" className="btn"><span>View All</span>
@@ -131,7 +178,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-       
+
         <section className="experience" id="experience">
           <h2 className="heading"><i className="fas fa-briefcase" /> Experience </h2>
           <div className="timeline">
@@ -157,7 +204,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          
+
           </div>
           <div className="morebtn">
             <a href="/experience" className="btn"><span>View All</span>
@@ -167,8 +214,8 @@ export default function Home() {
         </section>
         {/* experience section ends */}
         {/* contact section starts */}
-        <ContactUs/>
-      
+        <ContactUs />
+
         {/* contact section ends */}
         {/* footer section starts */}
         <section className="footer">
@@ -206,7 +253,7 @@ export default function Home() {
         {/* footer section ends */}
         {/* scroll top btn */}
         <a href="#home" aria-label="ScrollTop" className="fas fa-angle-up" id="scroll-top" />
-       
+
       </div>
 
 
