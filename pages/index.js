@@ -17,7 +17,7 @@ export default function Home() {
         <title>Portfolio | Abhishek Maurya</title>
         <meta name="description" content="Portfolio | Abhishek Maurya" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <div>
         {/* {isLoading&&<div class="loader-container">
