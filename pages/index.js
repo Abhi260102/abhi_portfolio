@@ -128,7 +128,7 @@ export default function Home() {
               <h3>I'm Abhishek</h3>
               <span className="tag">Mern Stack Developer</span>
               <p className='text-black'>I am a Full-Stack developer based in Jaipur, India.
-                I have 3+ years of hand on experience as Mern developer,
+                I have 4+ years of hand on experience as Mern developer,
                 I am an Information Technology undergraduate from BIT.
                 I am very passionate about improving my coding skills &amp; developing applications &amp; websites.
                 I build WebApps and Websites using MERN Stack.
@@ -186,11 +186,11 @@ export default function Home() {
           <div className="box-container">
 
           </div>
-          <div className="viewall">
+          {/* <div className="viewall">
             <a href="/projects" className="btn"><span>View All</span>
               <i className="fas fa-arrow-right" />
             </a>
-          </div>
+          </div> */}
         </section>
 
         <section className="experience" id="experience">
