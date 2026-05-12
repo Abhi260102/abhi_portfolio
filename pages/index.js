@@ -27,36 +27,50 @@ export default function Home() {
 
 
         {isLoading && (
-          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-950 overflow-hidden">
+            {/* Animated background blobs for a premium feel */}
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-600/10 rounded-full mix-blend-screen filter blur-[100px] animate-pulse"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full mix-blend-screen filter blur-[100px] animate-pulse" style={{ animationDelay: '1s' }}></div>
 
-            <div className="relative text-center px-8 py-10 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl">
+            <div className="relative text-center px-10 py-14 rounded-3xl bg-slate-900/40 backdrop-blur-2xl border border-white/5 shadow-[0_0_50px_rgba(249,115,22,0.05)] flex flex-col items-center group transition-all duration-700 hover:border-orange-500/20 hover:shadow-[0_0_80px_rgba(249,115,22,0.1)] hover:bg-slate-900/50">
 
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-28 h-28 bg-orange-500/20 blur-3xl rounded-full"></div>
+              {/* Glowing top accent line */}
+              <div className="absolute -top-[1px] left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-70"></div>
 
-              <p className="text-orange-400 text-sm tracking-[0.3em] uppercase mb-3 animate-pulse">
-                Welcome
-              </p>
-
-              <div className="relative flex justify-center mb-6">
-                <div className="absolute w-24 h-24 rounded-full border-4 border-orange-400/20 animate-ping"></div>
+              <div className="relative flex justify-center mb-8">
+                {/* Animated rings surrounding the loader */}
+                <div className="absolute inset-0 rounded-full border border-orange-500/20 animate-[spin_3s_linear_infinite] transition-all duration-500 group-hover:border-orange-500/40 group-hover:scale-105"></div>
+                <div className="absolute inset-[-10px] rounded-full border border-dashed border-orange-500/20 animate-[spin_4s_linear_infinite_reverse]"></div>
+                <div className="absolute inset-[-20px] rounded-full border border-slate-700/30 animate-ping opacity-20"></div>
                 <img
-                  src="./images/preloader.gif"
+                  src="./images/loader.gif"
                   alt="Loading"
                   draggable="false"
-                  className="w-20 h-20 relative z-10 select-none"
+                  className="w-20 h-20 relative z-10 select-none drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
-              <h1 className="text-3xl sm:text-4xl font-semibold text-white tracking-wide">
+              <p className="text-orange-500 text-xs font-semibold tracking-[0.4em] uppercase mb-4 animate-pulse">
+                Loading Environment
+              </p>
+
+              <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight mb-2 transition-all duration-500 group-hover:text-white">
                 Abhishek Maurya
               </h1>
 
-              <p className="mt-2 text-sm text-slate-400 tracking-wide">
-                Crafting Digital Experiences
+              <p className="text-sm text-slate-400 tracking-widest font-light uppercase">
+                Full-Stack Software Engineer
               </p>
 
-              <div className="mt-6 w-48 h-1 mx-auto bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full w-1/2 bg-orange-400 animate-[loadingBar_1.4s_ease-in-out_infinite]"></div>
+              {/* Premium Progress Bar */}
+              <div className="mt-10 w-64 h-1.5 mx-auto bg-slate-800/80 rounded-full overflow-hidden backdrop-blur-sm border border-white/5 relative">
+                <div className="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-300 rounded-full animate-[loadingBar_1.4s_ease-in-out_infinite] shadow-[0_0_10px_rgba(249,115,22,0.8)]"></div>
+              </div>
+
+              {/* System loading text */}
+              <div className="mt-4 text-[10px] text-slate-500 font-mono tracking-widest flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
+                INITIALIZING ASSETS
               </div>
 
             </div>
@@ -108,7 +122,7 @@ export default function Home() {
           <h2 className="heading"><i className="fas fa-user-alt" /> About <span>Me</span></h2>
           <div className="row">
             <div className="image">
-              <img draggable="false" className="tilt" src="./images/subject.png" alt />
+              <img draggable="false" className="tilt" src="./images/profile2.png" alt />
             </div>
             <div className="content">
               <h3>I'm Abhishek</h3>
